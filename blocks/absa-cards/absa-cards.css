@@ -1,0 +1,55 @@
+
+.absa-cards-wrapper > .absa-cards > ul {
+  display: flex;
+  justify-content: space-between; /* Ensure cards are spaced evenly */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li {
+  flex: 1;
+  margin: 0 10px; /* Space between cards */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to start */
+  border: none; /* Remove the border */
+  background-color: transparent; /* Remove background color */
+}
+
+.absa-cards-wrapper .absa-cards-card-image {
+  width: 100%;
+  margin-bottom: 10px; /* Add space between the image and the text */
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+.absa-cards-wrapper .absa-cards-card-body {
+  display: flex;
+  flex-direction: column; /* Stack text and button vertically */
+  align-items: flex-start; /* Align items to start */
+  margin: 0; /* Remove margin to make content closer */
+}
+
+.absa-cards-wrapper .button-container {
+  margin-top: auto; /* Pushes the button to the bottom of the container */
+}
+
+.absa-cards-wrapper .button-container .button {
+  background-color: white; /* Change button background color to white */
+  color: red; /* Change button text color to red */
+  text-decoration: none; /* Remove underline from link */
+  position: relative; /* For positioning the arrow icon */
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3em 0.6em; /* Reduce padding for a more compact button */
+}
+
+.absa-cards-wrapper .button-container .button::after {
+  content: '➔'; /* Add arrow icon */
+  margin-left: 5px; /* Space between text and arrow */
+}
